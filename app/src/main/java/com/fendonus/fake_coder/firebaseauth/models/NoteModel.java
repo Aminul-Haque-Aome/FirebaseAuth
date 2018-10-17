@@ -5,7 +5,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "note_table")
-public class Note {
+public class NoteModel {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id_column")
@@ -20,7 +20,7 @@ public class Note {
     @ColumnInfo(name = "priority_column")
     private String priority;
 
-    public Note(String title, String description, String priority) {
+    public NoteModel(String title, String description, String priority) {
         this.title = title;
         this.description = description;
         this.priority = priority;
