@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:mContext=".UserInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Create Your Account"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/activity_user_info_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/activity_user_info_nid_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/nid_hint"
+                android:inputType="numberDecimal"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/activity_user_info_address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/address_hint"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/activity_user_info_phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/phone_hint"
+                android:inputType="phone"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/activity_user_info_mail_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/activity_user_info_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/activity_user_info_retype_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/retype_password_hint"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/activity_user_info_accept_check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:text="I accept all terms &amp; condition" />
+
+            <Button
+                android:id="@+id/activity_user_info_sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:onClick="createAccount"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
