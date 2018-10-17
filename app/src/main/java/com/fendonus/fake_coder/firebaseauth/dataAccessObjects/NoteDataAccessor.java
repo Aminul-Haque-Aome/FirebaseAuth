@@ -13,7 +13,7 @@ import java.util.List;
 import com.fendonus.fake_coder.firebaseauth.models.NoteModel;
 
 @Dao
-public interface NoteDataAccesor {
+public interface NoteDataAccessor {
 
     @Insert
     void insertNote(NoteModel noteModel);
