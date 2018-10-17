@@ -5,6 +5,8 @@ import android.util.Log;
 
 import com.sdsmdg.tastytoast.TastyToast;
 
+import java.util.Date;
+
 public class ToastUtility {
 
     public static void showInfo(Context context, String message) {
@@ -27,7 +29,8 @@ public class ToastUtility {
                 TastyToast.LENGTH_LONG, TastyToast.CONFUSING);
     }
 
-    public static void showLog(String tag, String messaage) {
-        Log.d(tag, messaage);
+    public static void showLog(String tag, String message) {
+        Date date = new Date();
+        Log.d(tag, date.toString() +" "+ message);
     }
 }

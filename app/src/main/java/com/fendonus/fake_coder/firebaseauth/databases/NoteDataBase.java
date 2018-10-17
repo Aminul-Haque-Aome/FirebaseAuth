@@ -16,7 +16,7 @@ import com.fendonus.fake_coder.firebaseauth.utilities.ToastUtility;
 public abstract class NoteDataBase extends RoomDatabase {
     private static NoteDataBase instance;
 
-    public static synchronized NoteDataBase getDatbaseInstance(Context context) {
+    public static synchronized NoteDataBase getDataBaseInstance(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(
                     context.getApplicationContext(),
@@ -34,11 +34,11 @@ public abstract class NoteDataBase extends RoomDatabase {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
-            // ... this method is called in a life time of an App
+            // ... this method is called once in a life time of an App
             ToastUtility.showLog("Database", "Created Successfully");
         }
     };
 
-    public abstract NoteDataAccessor noteDao();
+    public abstract NoteDataAccessor getNoteDao();
 
 }
