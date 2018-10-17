@@ -18,7 +18,7 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         mAuth = FirebaseAuth.getInstance();
-        checkIfUserIsLoggedIn();
+        isUserLoggedIn();
     }
 
     @Override
@@ -27,7 +27,7 @@ public class DashboardActivity extends AppCompatActivity {
         mAuth.addAuthStateListener(mUserStatusListener);
     }
 
-    private void checkIfUserIsLoggedIn() {
+    private void isUserLoggedIn() {
         mUserStatusListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
